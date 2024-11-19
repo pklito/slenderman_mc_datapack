@@ -1,0 +1,9 @@
+{
+	"criteria": { "use_item": {
+		"trigger": "minecraft:using_item",
+		"conditions": { "item": { "predicates": {
+			"minecraft:custom_data": {"flashlight":true}
+		}}}
+	}},
+	"rewards": { "function": "lito:item/flashlight_toggle" }
+}

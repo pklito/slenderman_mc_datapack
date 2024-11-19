@@ -1,0 +1,7 @@
+{
+	"criteria": { "use_item": {
+		"trigger": "minecraft:using_item",
+		"conditions": { "item": { "items": "minecraft:golden_carrot"}}
+	}},
+	"rewards": { "function": "lito:item/night_vision_toggle" }
+}
