@@ -1,0 +1,1 @@
+$particle minecraft:entity_effect{color:[0.996078431372549, 0.8, $(val), 0.8]} ~ ~ ~ 0 0 0 0 1 normal @s
