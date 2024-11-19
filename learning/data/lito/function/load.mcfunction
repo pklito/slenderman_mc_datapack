@@ -16,3 +16,5 @@ scoreboard objectives add VAR dummy
 scoreboard objectives add CONST dummy
 
 scoreboard players set _4 CONST 4
+
+scoreboard objectives add slender_fear dummy

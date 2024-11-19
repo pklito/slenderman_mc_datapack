@@ -8,5 +8,7 @@ function lito:light/tick
 
 function lito:move/tick
 
+function lito:creaking/tick
+
 
 stopsound @a music
