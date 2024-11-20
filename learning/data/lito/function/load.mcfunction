@@ -24,3 +24,5 @@ scoreboard players set _12 CONST 12
 
 scoreboard objectives add slender_fear dummy
 scoreboard objectives add sound_slender dummy
+scoreboard objectives add sound_music dummy
+scoreboard objectives add sound_static dummy

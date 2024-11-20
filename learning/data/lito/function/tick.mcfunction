@@ -10,5 +10,6 @@ function lito:move/tick
 
 function lito:creaking/tick
 
+function lito:sound/tick
 
 stopsound @a music
