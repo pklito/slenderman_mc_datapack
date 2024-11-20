@@ -1,5 +1,10 @@
 {
     "values": [
-        "minecraft:air"
+        "minecraft:air",
+        "minecraft:void_air",
+        "minecraft:cave_air",
+        "structure_void",
+        "#stairs",
+        "light"
     ]
   }
