@@ -17,7 +17,10 @@ scoreboard objectives add CONST dummy
 
 scoreboard players set _4 CONST 4
 scoreboard players set _100 CONST 100
+scoreboard players set _120 CONST 120
 scoreboard players set _10 CONST 10
+scoreboard players set _12 CONST 12
 
 
 scoreboard objectives add slender_fear dummy
+scoreboard objectives add sound_slender dummy
