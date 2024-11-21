@@ -16,8 +16,10 @@ scoreboard objectives add VAR dummy
 scoreboard objectives add CONST dummy
 scoreboard players set _6 CONST 6
 
+scoreboard players set _80 CONST 80
 scoreboard players set _4 CONST 4
 scoreboard players set _100 CONST 100
+scoreboard players set _200 CONST 200
 scoreboard players set _120 CONST 120
 scoreboard players set _10 CONST 10
 scoreboard players set _12 CONST 12
