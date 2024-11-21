@@ -14,6 +14,7 @@ scoreboard objectives add sprinting dummy
 scoreboard objectives add VAR dummy
 
 scoreboard objectives add CONST dummy
+scoreboard players set _6 CONST 6
 
 scoreboard players set _4 CONST 4
 scoreboard players set _100 CONST 100

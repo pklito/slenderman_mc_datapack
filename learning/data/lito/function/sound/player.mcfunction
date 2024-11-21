@@ -6,6 +6,9 @@ scoreboard players remove @s sound_music 1
 # Static
 scoreboard players remove @s sound_static 1
 scoreboard players set @s[scores={sound_static=..0}] sound_static 0
+stopsound @s[scores={sound_static=..0}] * slender:slender.static_heavy
+stopsound @s[scores={sound_static=..0}] * slender:slender.static_medium
+stopsound @s[scores={sound_static=..0}] * slender:slender.static_light
 
 execute if score @s[scores={sound_static=..0}] slender_fear matches 100..500 run playsound slender:slender.static_light hostile @s ~ ~ ~ 0.5 1
 execute if score @s[scores={sound_static=..0}] slender_fear matches 501..1099 run playsound slender:slender.static_medium hostile @s ~ ~ ~ 0.5 1

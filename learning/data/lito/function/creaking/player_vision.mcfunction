@@ -4,5 +4,5 @@ execute anchored eyes facing entity @n[type=creaking] eyes unless function lito:
 
 
 scoreboard players add @s slender_fear 65
-scoreboard players operation RAYCAST temp /= _12 CONST
+scoreboard players operation RAYCAST temp /= _4 CONST
 scoreboard players operation @s slender_fear -= RAYCAST temp
