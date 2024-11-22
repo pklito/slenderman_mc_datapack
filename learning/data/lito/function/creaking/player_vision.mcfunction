@@ -3,7 +3,7 @@ tag @n[tag=slenderman_entity] add vision_target
 execute unless function lito:creaking/vision_start run return fail
 
 
-scoreboard players set REMOVE temp 65
+scoreboard players set REMOVE temp 75
 scoreboard players operation RAYCAST temp /= _4 CONST
 scoreboard players operation REMOVE temp -= RAYCAST temp
 
