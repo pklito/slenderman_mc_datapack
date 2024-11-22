@@ -1,4 +1,4 @@
-execute unless entity @n[type=creaking] run return fail
+execute unless entity @n[tag=slenderman_entity] run return fail
 execute as @a[tag=player, gamemode=adventure] at @s run function lito:creaking/player
 
 # Just to remove the effects

@@ -14,5 +14,5 @@ effect give @a[tag=player,scores={flashlight_on=2, sprinting=1},nbt={SelectedIte
 
 
 # Particle 
-execute as @a[tag=player] at @s run particle minecraft:entity_effect{color:[0.996078431372549, 0.4, 1., 0.6]} ^ ^1 ^-25 0 0 0 0 1 normal @s
-execute as @a[tag=player] at @s run particle minecraft:entity_effect{color:[0.996078431372549, 0.4, 0., 0.6]} ^ ^1 ^25 0 0 0 0 1 normal @s
+execute as @a[tag=player] at @s run particle minecraft:entity_effect{color:[0.996078431372549, 0.4, 1., 0.6]} ^ ^1 ^-22 0 0 0 0 1 force @s
+execute as @a[tag=player] at @s run particle minecraft:entity_effect{color:[0.996078431372549, 0.4, 0., 0.6]} ^ ^1 ^30 0 0 0 0 1 normal @s

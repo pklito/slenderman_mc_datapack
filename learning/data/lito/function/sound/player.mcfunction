@@ -1,6 +1,6 @@
 # should be only when slender is awake
 execute unless score @s sound_music matches 1.. run playsound slender:ambient.drums master @s ~ ~100 ~ 1 1 1
-execute unless score @s sound_music matches 1.. run scoreboard players set @s sound_music 2000
+execute unless score @s sound_music matches 1.. run scoreboard players set @s sound_music 2400
 scoreboard players remove @s sound_music 1
 
 # Static

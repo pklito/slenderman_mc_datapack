@@ -11,6 +11,7 @@ scoreboard objectives add night_vision_on dummy
 
 scoreboard objectives add sprinting dummy
 
+scoreboard objectives add slender_distance dummy
 scoreboard objectives add VAR dummy
 
 scoreboard objectives add CONST dummy
