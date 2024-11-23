@@ -11,7 +11,7 @@ execute if score TEMP temp matches 1 run return run function lito:creaking/actio
 # unless vision works in this place, do another loop
 tag @e remove vision_target
 tag @s add vision_target
-execute as @a[tag=player,distance=..40] at @s store success score TPFUNC temp run function lito:creaking/vision_start
+execute as @a[tag=player,distance=..40] at @s store success score TPFUNC temp run function lito:creaking/vision_check/start
 execute if score TPFUNC temp matches 1 run return run function lito:creaking/action/teleport_loop
 
 

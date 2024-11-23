@@ -1,6 +1,6 @@
 tag @e remove vision_target
 tag @n[tag=slenderman_entity] add vision_target
-execute unless function lito:creaking/vision_start run return fail
+execute unless function lito:creaking/vision_check/start run return fail
 
 
 scoreboard players set REMOVE temp 75
