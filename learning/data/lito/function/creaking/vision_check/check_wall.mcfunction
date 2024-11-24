@@ -6,9 +6,9 @@ scoreboard players operation P_X temp %= _1000 CONST
 scoreboard players operation P_Z temp %= _1000 CONST
 
 # Early exit
-execute unless score P_X temp matches 250..750 unless score P_Z temp matches 250..750 run return 1
+execute unless score P_X temp matches 225..775 unless score P_Z temp matches 225..775 run return 1
 # Center pillar
-execute if block ~ ~ ~ #walls[up=true] if score P_X temp matches 250..750 if score P_Z temp matches 250..750 run return fail
+execute if block ~ ~ ~ #walls[up=true] if score P_X temp matches 225..775 if score P_Z temp matches 225..775 run return fail
 execute if score P_X temp matches 312..688 if score P_Z temp matches 312..688 run return fail
 
 
