@@ -4,7 +4,7 @@
         "minecraft:void_air",
         "minecraft:cave_air",
         "structure_void",
-        "#stairs",
+        "black_stained_glass_pane",
         "light"
     ]
   }
