@@ -2,7 +2,7 @@
 # Slender = tag=vision_target
 
 # Make sure slender is in players cone of vision
-execute facing entity @n[tag=vision_target] feet positioned ^ ^ ^1 rotated as @s positioned ^ ^ ^-1 unless entity @s[distance=..0.79] run return fail
+execute facing entity @n[tag=vision_target] feet positioned ^ ^ ^1 rotated as @s positioned ^ ^ ^-1 unless entity @s[distance=..0.83] run return fail
 
 execute unless entity @n[tag=vision_coord_getter] run summon marker ~ ~ ~ {Tags:["vision_coord_getter"]}
 #right side
