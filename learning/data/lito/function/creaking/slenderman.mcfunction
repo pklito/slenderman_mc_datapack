@@ -1,0 +1,1 @@
+execute facing entity @p[tag=player] feet run rotate @s ~ 0
