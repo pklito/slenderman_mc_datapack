@@ -1,0 +1,15 @@
+{
+	"criteria": {
+	  "A": {
+		"trigger": "minecraft:player_interacted_with_entity",
+		"conditions": {
+		  "entity": {
+			"type": "minecraft:item_frame"
+		  }
+		}
+	  }
+	},
+	"rewards": {
+	  "function": "lito:item/item_frame_interact"
+	}
+}
