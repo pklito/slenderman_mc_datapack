@@ -1,0 +1,1 @@
+$summon item_frame $(X) $(Y) $(Z) {Item:{id:"minecraft:map"}, Invincible:1b, Facing:$(Facing), Tags:["page"], Invisible:1b}
