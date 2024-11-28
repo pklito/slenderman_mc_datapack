@@ -1,4 +1,4 @@
-$data modify storage lito:trees input set from storage lito:trees base[$(element)]
+# Picked tree is in storage lito:trees.input
 execute store result score RAND VAR run random value 0..11
 
 data merge storage lito:trees {input:{mirror:"none"}}
