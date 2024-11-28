@@ -1,0 +1,1 @@
+execute unless items entity @s container.0 * unless score @s page_activated matches 1 run function lito:item/item_frame_activate

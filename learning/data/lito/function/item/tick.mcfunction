@@ -1,0 +1,1 @@
+execute as @e[tag=page,type=item_frame] at @s run function lito:item/item_frame

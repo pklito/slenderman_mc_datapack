@@ -32,3 +32,5 @@ scoreboard objectives add slender_fear dummy
 scoreboard objectives add sound_slender dummy
 scoreboard objectives add sound_music dummy
 scoreboard objectives add sound_static dummy
+
+scoreboard objectives add page_activated dummy
