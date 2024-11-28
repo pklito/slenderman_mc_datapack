@@ -1,10 +1,10 @@
 function lito:creaking/player_vision
 
 # Make slender fear value decrease over time
-scoreboard players remove @s slender_fear 10
+execute unless score @s slender_distance matches 0.. run scoreboard players remove @s slender_fear 4
 scoreboard players operation @s temp = @s slender_fear
-scoreboard players operation @s temp /= _200 CONST
-scoreboard players operation @s slender_fear -= @s temp
+scoreboard players operation @s temp /= _100 CONST
+execute unless score @s slender_distance matches 0.. run scoreboard players operation @s slender_fear -= @s temp
 
 # Do static effect
 scoreboard players set @s[scores={slender_fear=..0}] slender_fear 0
