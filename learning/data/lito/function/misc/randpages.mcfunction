@@ -40,4 +40,5 @@ data modify storage lito:random input set from storage lito:pages tree
 function lito:misc/random_element
 function lito:misc/summonpage with storage lito:random output
 
+# Spawn 10 pages, kill 2 randomly.
 kill @e[type=item_frame,tag=page,sort=random,limit=2]
