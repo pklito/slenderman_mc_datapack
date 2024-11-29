@@ -1,6 +1,6 @@
 execute unless score ITER temp matches 1.. run return fail
 scoreboard players remove ITER temp 1
-spreadplayers ~ ~ 15 8 false @s
+spreadplayers ~ ~ 32 8 false @s
 execute at @s run tp @s ~ 5.5 ~
 
 scoreboard players set TEMP temp 0
