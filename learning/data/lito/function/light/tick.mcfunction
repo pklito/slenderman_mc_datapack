@@ -1,10 +1,17 @@
 execute as @a[tag=player] at @s run fill ~-14 ~-3 ~-14 ~14 ~14 ~14 air replace minecraft:light
+execute at @e[tag=light] run fill ~ ~ ~ ~ ~ ~ air replace light
+
+tag @e[tag=light] remove light_used
 scoreboard players set @a[tag=player,gamemode=!spectator,scores={flashlight_on=1},nbt={SelectedItem:{components:{"minecraft:custom_data":{flashlight:true}}}}] flashlight_on 2
 scoreboard players set @a[tag=player,gamemode=!spectator,scores={flashlight_on=2},nbt=!{SelectedItem:{components:{"minecraft:custom_data":{flashlight:true}}}}] flashlight_on 1
 
 execute as @a[tag=player,gamemode=!spectator,scores={flashlight_on=2, night_vision_on = 0, sprinting=0}] at @s run function lito:light/player
-execute as @a[tag=player,gamemode=!spectator,scores={flashlight_on=2, night_vision_on = 0, sprinting= 1}] rotated ~ ~2 at @s run function lito:light/player
+execute as @a[tag=player,gamemode=!spectator,scores={flashlight_on=2, night_vision_on = 0, sprinting= 1}] rotated ~5 ~2 at @s run function lito:light/player
 
+
+kill @e[tag=light,tag=!light_used]
+
+# # # Effects and post processing # # #
 effect give @a[tag=player,scores={night_vision_on=1}] minecraft:blindness 3 10 true
 effect clear @a[tag=player,scores={night_vision_on=0}] minecraft:blindness
 

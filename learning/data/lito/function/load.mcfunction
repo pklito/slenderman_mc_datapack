@@ -39,3 +39,5 @@ tellraw @a[tag=debug] {"text":"Forceloading chunks...","color":"green"}
 forceload remove all
 forceload add 341 -465 526 -770
 forceload add 529 -770 654 -465
+
+#forceload add 700 -200
