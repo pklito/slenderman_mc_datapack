@@ -1,1 +1,1 @@
-$summon item_frame $(X) $(Y) $(Z) {Item:{id:"minecraft:map"}, Invincible:1b, Facing:$(Facing), Tags:["page"], Invisible:1b}
+$summon item_frame $(X) $(Y) $(Z) {Item:{id:"minecraft:map", components:{item_model:"slender:page",custom_model_data:{"floats":[$(page)]}}}, Invincible:1b, Facing:$(Facing), Tags:["page"], Invisible:1b}
