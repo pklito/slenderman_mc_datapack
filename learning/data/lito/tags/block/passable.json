@@ -5,6 +5,8 @@
         "minecraft:cave_air",
         "structure_void",
         "black_stained_glass_pane",
-        "light"
+        "light",
+        "#trapdoors",
+        "redstone_wire"
     ]
   }
