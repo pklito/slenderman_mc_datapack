@@ -34,3 +34,8 @@ scoreboard objectives add sound_music dummy
 scoreboard objectives add sound_static dummy
 
 scoreboard objectives add page_activated dummy
+
+tellraw @a[tag=debug] {"text":"Forceloading chunks...","color":"green"}
+forceload remove all
+forceload add 341 -465 526 -770
+forceload add 529 -770 654 -465
