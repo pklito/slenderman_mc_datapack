@@ -6,6 +6,8 @@
         "structure_void",
         "black_stained_glass_pane",
         "light",
-        "redstone_wire"
+        "redstone_wire",
+        "tall_grass",
+        "short_grass"
     ]
   }

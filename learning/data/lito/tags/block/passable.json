@@ -7,6 +7,8 @@
         "black_stained_glass_pane",
         "light",
         "#trapdoors",
-        "redstone_wire"
+        "redstone_wire",
+        "tall_grass",
+        "short_grass"
     ]
   }
