@@ -1,0 +1,12 @@
+summon marker ~ ~ ~ {Tags:["temp_tp_ring"]}
+summon marker ~ ~ ~ {Tags:["temp_tp_ring"]}
+summon marker ~ ~ ~ {Tags:["temp_tp_ring"]}
+summon marker ~ ~ ~ {Tags:["temp_tp_ring"]}
+summon marker ~ ~ ~ {Tags:["temp_tp_ring"]}
+summon marker ~ ~ ~ {Tags:["temp_tp_ring"]}
+summon marker ~ ~ ~ {Tags:["temp_tp_ring"]}
+summon marker ~ ~ ~ {Tags:["temp_tp_ring"]}
+summon marker ~ ~ ~ {Tags:["temp_tp_ring"]}
+summon marker ~ ~ ~ {Tags:["temp_tp_ring"]}
+summon marker ~ ~ ~ {Tags:["temp_tp_ring"]}
+summon marker ~ ~ ~ {Tags:["temp_tp_ring"]}

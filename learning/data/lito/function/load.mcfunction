@@ -28,6 +28,9 @@ scoreboard players set _10 CONST 10
 scoreboard players set _12 CONST 12
 
 scoreboard objectives add sl_entity_action dummy
+scoreboard objectives add sl_entity_chasing dummy
+#scoreboard objectives add sl_entity_angry dummy
+
 
 scoreboard objectives add slender_fear dummy
 scoreboard objectives add sound_slender dummy

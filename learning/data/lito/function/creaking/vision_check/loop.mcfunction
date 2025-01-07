@@ -1,5 +1,5 @@
 
-execute if score RAYCAST temp matches 400.. run return fail
+execute if score RAYCAST temp matches 500.. run return fail
 
 # RET = 1 if not in a block
 scoreboard players set RET temp 1
