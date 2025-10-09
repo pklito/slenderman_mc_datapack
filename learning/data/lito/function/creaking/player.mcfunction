@@ -12,5 +12,5 @@ execute store result storage lito:game temp.val float 0.0005 run scoreboard play
 execute if score @s slender_fear matches 1..1550 run function lito:creaking/particle with storage lito:game temp
 execute if score @s slender_fear matches 0 run particle minecraft:entity_effect{color:[0.996078431372549, 0.8, 0.0, 0.8]} ~ ~ ~ 0 0 0 0 1 normal @s
 
-kill @s[scores={slender_fear=1700..},gamemode=adventure]
-scoreboard players set @s[scores={slender_fear=1700..},gamemode=adventure] slender_fear 0
+kill @s[scores={slender_fear=1900..},gamemode=adventure]
+scoreboard players set @s[scores={slender_fear=1900..},gamemode=adventure] slender_fear 0
