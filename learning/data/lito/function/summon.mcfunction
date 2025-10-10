@@ -1,0 +1,1 @@
+summon minecraft:item_display 529 5 -625 {Tags:["sl_model","slenderman_entity","slman"],item:{id:"obsidian",components:{item_model:"slender:slender"}},transformation:{scale:[1.f,1.1f,1f],translation:[0f,0.6f,0f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]},UUID:[I;1717986918,1717986918,1717986918,1717986918]}
