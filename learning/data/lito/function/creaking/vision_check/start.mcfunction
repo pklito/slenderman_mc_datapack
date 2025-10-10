@@ -2,7 +2,10 @@
 # Slender = tag=vision_target
 
 # Make sure slender is in players cone of vision
-execute facing entity @n[tag=vision_target] feet positioned ^ ^ ^1 rotated as @s positioned ^ ^ ^-1 unless entity @s[distance=..0.83] run return fail
+scoreboard players set TEMP temp 0
+execute facing entity @n[tag=vision_target] feet positioned ^ ^ ^1 rotated as @s positioned ^ ^ ^-1 if entity @s[distance=..0.83] run scoreboard players set TEMP temp 1
+execute positioned ~ ~2 ~ facing entity @n[tag=vision_target] feet positioned ^ ^ ^1 rotated as @s positioned ^ ^ ^-1 positioned ~ ~-2 ~ if entity @s[distance=..0.8] run scoreboard players set TEMP temp 1
+execute if score TEMP temp matches 0 run return fail
 
 execute unless entity @n[tag=vision_coord_getter] run summon marker ~ ~ ~ {Tags:["vision_coord_getter"]}
 #right side
