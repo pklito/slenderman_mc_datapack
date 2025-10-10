@@ -1,0 +1,1 @@
+execute positioned 1 2 3 if function lito:creaking/vision_check/test_position run tp ~ ~ ~
