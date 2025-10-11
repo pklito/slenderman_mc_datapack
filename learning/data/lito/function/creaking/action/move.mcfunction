@@ -1,3 +1,5 @@
+execute if score #showMove dev.config matches 1 run tellraw @a[tag=debug] [{"text":"[ TP ]","color":"gray"},{"text":"move","color":"white"}]
+
 kill @e[tag=move_option,type=marker]
 execute store result score ITER temp run random value 12..32
 function lito:creaking/action/move_loop_ray

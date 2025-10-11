@@ -1,1 +1,2 @@
 execute at @p[tag=player] run function lito:creaking/action/local_teleport
+execute if score #showMove dev.config matches 1 run tellraw @a[tag=debug] [{"text":"      ","color":"gray"},{"text":"(local)","color":"white"}]
