@@ -11,7 +11,13 @@ scoreboard objectives add night_vision_on dummy
 
 scoreboard objectives add sprinting dummy
 
+# core.slender_distance, player sees slenderman at a distance (value is distance at 0.1 meters)
+# core.player_distance, actual distance from slenderman
+# core.player_seen, does slenderman see the player
 scoreboard objectives add core.slender_distance dummy
+scoreboard objectives add core.player_distance dummy
+scoreboard objectives add core.player_seen dummy
+
 scoreboard objectives add VAR dummy
 
 scoreboard objectives add CONST dummy
