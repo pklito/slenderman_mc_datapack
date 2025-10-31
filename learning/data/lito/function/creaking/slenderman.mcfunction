@@ -6,11 +6,7 @@ execute unless score @s sl_entity_action matches 1.. unless entity @a[tag=player
 execute if score @s sl_entity_chasing matches 1 unless entity @a[tag=player,scores={slender_distance=0..}] at @s run function lito:creaking/action/action_chase
 
 # Debug
-execute unless score @s sl_entity_action matches 1.. unless entity @a[tag=player,scores={slender_distance=0..}] at @s run playsound block.note_block.banjo master @a ~ ~ ~ 1 1 0.5
-execute unless score @s sl_entity_action matches 1.. unless entity @a[tag=player,scores={slender_distance=0..}] at @s run summon zombie ~ ~ ~ {NoAI:true,Health:4,active_effects:[{id:glowing,duration:-1},{id:wither,duration:-1}],Tags:["debug","debug.die"]}
-
-
-kill @e[type=zombie,tag=debug.die]
+execute unless score @s sl_entity_action matches 1.. unless entity @a[tag=player,scores={slender_distance=0..}] at @s run function lito:misc/visual_marker
 
 execute store result score @s[scores={sl_entity_action=..0}] sl_entity_action run random value 60..160
 
