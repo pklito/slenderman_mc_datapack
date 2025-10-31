@@ -1,5 +1,5 @@
 kill @e[type=item_frame,tag=page]
-
+# TODO page numbers should be unique
 data modify storage lito:random input set from storage lito:pages bathroom
 function lito:misc/array/random_element
 execute store result storage lito:random output.page_number int 1 run random value 1..9
