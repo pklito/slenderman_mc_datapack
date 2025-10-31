@@ -1,9 +1,9 @@
 tag @e remove vision_target
 tag @n[tag=slenderman_entity] add vision_target
 
-scoreboard players set @s slender_distance -1
+scoreboard players set @s core.slender_distance -1
 execute unless function lito:creaking/vision_check/start run return fail
-scoreboard players operation @s slender_distance = RAYCAST slender_distance
+scoreboard players operation @s core.slender_distance = RAYCAST core.slender_distance
 
 
 scoreboard players set REMOVE temp 75
