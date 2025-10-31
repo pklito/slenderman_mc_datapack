@@ -1,4 +1,5 @@
 $execute if entity @s[type=player] at @s as @n[type=item_frame,distance=..4] at @s run function lito:misc/storepage {location:$(location)}
+execute unless entity @s[type=item_frame] run tellraw @p {"text": "Function failed. No item frame nearby"}
 execute unless entity @s[type=item_frame] run return fail
 
 data merge storage lito:pages {new:{X:0,Y:0,Z:0,Facing: 0b}}
