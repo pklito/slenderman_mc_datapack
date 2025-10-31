@@ -47,4 +47,5 @@ forceload add 529 -770 654 -465
 
 # Just in case, kill leftover visual markers
 kill @e[tag=debug.die]
+kill @e[tag=move_option,type=marker]
 #forceload add 700 -200

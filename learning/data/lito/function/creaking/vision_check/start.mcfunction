@@ -7,7 +7,9 @@ execute facing entity @n[tag=vision_target] feet positioned ^ ^ ^1 rotated as @s
 execute positioned ~ ~2 ~ facing entity @n[tag=vision_target] feet positioned ^ ^ ^1 rotated as @s positioned ^ ^ ^-1 positioned ~ ~-2 ~ if entity @s[distance=..0.8] run scoreboard players set TEMP temp 1
 execute if score TEMP temp matches 0 run return fail
 
-execute unless entity @n[tag=vision_coord_getter] run summon marker ~ ~ ~ {Tags:["vision_coord_getter"]}
+# UUID insures only one exists
+summon marker ~ ~ ~ {Tags:["vision_coord_getter"],UUID:[I;1234,1234,1234,1]}
+
 #right side
 scoreboard players set RAYCAST temp 0
 scoreboard players set GO_DOWN temp 1
