@@ -19,5 +19,7 @@ execute unless score #showMove dev.config matches 1 run tellraw @s ["",{"text":"
 
 tellraw @s ["",{"text":"[ C ]","color":"gray","clickEvent":{"action":"suggest_command","value":"/scoreboard players set @n[tag=slenderman_entity] sl_entity_chasing "},"hoverEvent":{"action":"show_text","contents":["",{"text":"Click to set slenderman chasing behavior.","color":"gray"},{"text":"\nTrue: 1, False: 0","color":"dark_gray"}]}}," Slender Chasing ",{"text":"(Current: ","color":"gray"},{"score":{"name":"@n[tag=slenderman_entity]","objective":"sl_entity_chasing"},"color":"gray"},{"text":")","color":"gray"}]
 tellraw @s [{"text":" "},{"text":"[Randomize pages]","color": "yellow","clickEvent": {"action":"run_command","value": "/function lito:misc/randpages"}}]
+tellraw @s [{"text":" "},{"text":"[Items]","color": "green","clickEvent": {"action":"run_command","value": "/function lito:give_items"}}]
+
 # ✎
 tellraw @s [{"text":"                                                                           ","color":"dark_gray","strikethrough":true},{"text": "[>]","strikethrough":false,"color": "gray","clickEvent": {"action": "run_command","value": "/function lito:config/config2"}},{"text":"  ","color":"dark_gray","strikethrough":true}]
