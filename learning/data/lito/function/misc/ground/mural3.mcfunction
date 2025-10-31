@@ -1,3 +1,5 @@
+tellraw @a[tag=debug] "This function destroys a large area, remove this return if you're certain on using it"
+return fail
 fill ~0 ~-2 ~-395 ~0 ~-2 ~-399 lime_wool
 fill ~0 ~-2 ~-322 ~0 ~-2 ~-324 lime_wool
 fill ~0 ~-2 ~-281 ~0 ~-2 ~-289 lime_wool

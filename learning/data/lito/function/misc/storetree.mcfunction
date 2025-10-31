@@ -1,3 +1,4 @@
+# Run function on 
 execute unless block ~ ~ ~ minecraft:structure_block run return fail
 
 data merge storage lito:trees {new:{x:0,z:0,sz:0,tree:"",sx:0}}
