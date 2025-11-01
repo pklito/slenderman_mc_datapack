@@ -38,9 +38,9 @@ scoreboard objectives add sl_entity_action dummy
 scoreboard objectives add sl_entity_chasing dummy
 #scoreboard objectives add sl_entity_angry dummy
 
-scoreboard objectives add sound_slender dummy
-scoreboard objectives add sound_music dummy
-scoreboard objectives add sound_static dummy
+scoreboard objectives add sound.piano dummy
+scoreboard objectives add sound.music dummy
+scoreboard objectives add sound.static dummy
 
 scoreboard objectives add page_activated dummy
 

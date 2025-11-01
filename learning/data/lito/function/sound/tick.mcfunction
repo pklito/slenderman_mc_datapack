@@ -1,1 +1,2 @@
 execute as @a[tag=player, gamemode=!spectator] at @s run function lito:sound/player
+stopsound @a music
