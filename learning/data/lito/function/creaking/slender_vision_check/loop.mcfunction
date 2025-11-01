@@ -11,9 +11,9 @@ execute unless score RET temp matches 0 positioned ^ ^ ^-0.05 unless block ~ ~ ~
 execute if score RET temp matches 0 if score GO_DOWN temp matches ..0 run scoreboard players set RAYCAST core.seen 0
 #In a block but GO_DOWN isn't 0 yet (recall and move one block down)
 execute unless score GO_DOWN temp matches ..0 if score RET temp matches 0 run scoreboard players remove GO_DOWN temp 1
-execute unless score GO_DOWN temp matches ..0 if score RET temp matches 0 positioned ^ ^ ^-0.1 positioned ~ ~-1 ~ facing entity @s eyes run return run function lito:creaking/vision_check/loop
+execute unless score GO_DOWN temp matches ..0 if score RET temp matches 0 positioned ^ ^ ^-0.1 positioned ~ ~-1 ~ facing entity @s eyes run return run function lito:creaking/slender_vision_check/loop
 
 execute as @s[dx=0] positioned ~-0.8 ~-0.8 ~-0.8 if entity @s[dx=0] run return 1
 
 scoreboard players add RAYCAST temp 1
-execute positioned ^ ^ ^0.1 run return run function lito:creaking/vision_check/loop
+execute positioned ^ ^ ^0.1 run return run function lito:creaking/slender_vision_check/loop
