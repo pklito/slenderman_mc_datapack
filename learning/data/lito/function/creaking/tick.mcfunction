@@ -1,4 +1,8 @@
 execute unless entity @n[tag=slenderman_entity] run return fail
+
+# Calculate the important scoreboard values
+function lito:creaking/core
+
 execute as @a[tag=player, gamemode=adventure] at @s run function lito:creaking/player
 
 # Just to remove the effects

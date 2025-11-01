@@ -1,4 +1,4 @@
-function lito:creaking/player_vision
+# Assumes core.slender_distance has been calculated
 
 # Make slender fear value decrease over time
 execute unless score @s core.slender_distance matches 0.. run scoreboard players remove @s slender_fear 4

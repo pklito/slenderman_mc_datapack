@@ -1,3 +1,6 @@
+# Sets core.slender_distance
+# Sets slender_fear
+# 
 tag @e remove vision_target
 tag @n[tag=slenderman_entity] add vision_target
 
