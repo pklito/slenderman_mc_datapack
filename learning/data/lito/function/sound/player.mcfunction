@@ -6,14 +6,14 @@ scoreboard players remove @s sound.music 1
 # Static
 scoreboard players remove @s sound.static 1
 scoreboard players set @s[scores={sound.static=..0}] sound.static 0
-stopsound @s[scores={sound.static=..0}] * slender:slender.static_heavy
+# stopsound @s[scores={sound.static=..0}] * slender:slender.static_heavy
 stopsound @s[scores={sound.static=..0}] * slender:slender.static_medium
 stopsound @s[scores={sound.static=..0}] * slender:slender.static_light
 
 execute if score @s[scores={sound.static=..0}] core.fear matches 100..500 run playsound slender:slender.static_light hostile @s ~ ~ ~ 0.5 1
 execute if score @s[scores={sound.static=..0}] core.fear matches 501..1099 run playsound slender:slender.static_medium hostile @s ~ ~ ~ 0.4 1
-execute if score @s[scores={sound.static=..0}] core.fear matches 1100.. run playsound slender:slender.static_heavy hostile @s ~ ~ ~ 0.5 1
-scoreboard players set @s[scores={sound.static=..0, core.fear=100..}] sound.static 45
+execute if score @s[scores={sound.static=..0}] core.fear matches 1100.. run playsound slender:slender.static_medium hostile @s ~ ~ ~ 0.5 1
+execute store result score @s[scores={sound.static=..0, core.fear=100..}] sound.static run random value 20..35
 
 # Piano
 execute unless score @s sound.piano matches -2147483648..2147483647 run scoreboard players set @s sound.piano 0
