@@ -3,6 +3,5 @@
 tag @e remove vision_target
 kill @e[tag=vision_target_marker]
 summon marker ~ ~ ~ {Tags:["vision_target", "vision_target_marker"]}
-scoreboard players set RAYCAST core.slender_distance -1
-execute as @a[tag=player,distance=..50] at @s if function lito:creaking/vision_check/_per_player_test run return 1
+execute as @a[tag=player,distance=..50] at @s if function lito:creaking/vision_check/start run return 1
 return 0
