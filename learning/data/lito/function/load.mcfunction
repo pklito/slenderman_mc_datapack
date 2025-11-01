@@ -14,7 +14,7 @@ scoreboard objectives add flashlight_cooldown dummy
 scoreboard objectives add item.flashlight_state dummy
 scoreboard objectives add item.night_vision_on dummy
 
-scoreboard objectives add sprinting dummy
+scoreboard objectives add player.sprinting dummy
 
 # core.slender_distance, player sees slenderman at a distance (value is distance at 0.1 meters)
 # core.player_distance, actual distance from slenderman
