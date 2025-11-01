@@ -15,8 +15,9 @@ scoreboard objectives add sprinting dummy
 # core.player_distance, actual distance from slenderman
 # core.player_seen, does slenderman see the player
 scoreboard objectives add core.slender_distance dummy
-scoreboard objectives add core.player_distance dummy
-scoreboard objectives add core.player_seen dummy
+scoreboard objectives add core.sees_slender dummy
+scoreboard objectives add core.seen dummy
+scoreboard objectives add core.fear dummy
 
 scoreboard objectives add VAR dummy
 
@@ -37,8 +38,6 @@ scoreboard objectives add sl_entity_action dummy
 scoreboard objectives add sl_entity_chasing dummy
 #scoreboard objectives add sl_entity_angry dummy
 
-
-scoreboard objectives add slender_fear dummy
 scoreboard objectives add sound_slender dummy
 scoreboard objectives add sound_music dummy
 scoreboard objectives add sound_static dummy

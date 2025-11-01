@@ -1,10 +1,6 @@
-# Assumes core.slender_distance has been calculated
+# Assumes core has been calculated
 
-# Make slender fear value decrease over time
-
-
-# Do static effect
-
+function lito:creaking/player/static
 
 kill @s[scores={core.fear=1900..},gamemode=adventure]
 scoreboard players set @s[scores={core.fear=1900..},gamemode=adventure] core.fear 0
