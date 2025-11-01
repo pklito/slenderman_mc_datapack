@@ -6,7 +6,7 @@ execute unless score @s sl_entity_action matches 1.. if entity @a[tag=player,sco
 execute if score @s sl_entity_chasing matches 1 if entity @a[tag=player,scores={core.sees_slender=0}] at @s run function lito:creaking/action/action_chase
 
 # Debug
-execute unless score @s sl_entity_action matches 1.. if entity @a[tag=player,scores={core.sees_slender=0}] at @s run function lito:misc/visual_marker
+execute if score #showMove dev.config matches 1 unless score @s sl_entity_action matches 1.. if entity @a[tag=player,scores={core.sees_slender=0}] at @s run function lito:misc/visual_marker
 
 execute store result score @s[scores={sl_entity_action=..0}] sl_entity_action run random value 60..160
 
