@@ -42,6 +42,8 @@ scoreboard objectives add sound.piano dummy
 scoreboard objectives add sound.music dummy
 scoreboard objectives add sound.static dummy
 
+scoreboard objectives add static_flash dummy
+
 scoreboard objectives add page_activated dummy
 
 scoreboard objectives add dev.config dummy
