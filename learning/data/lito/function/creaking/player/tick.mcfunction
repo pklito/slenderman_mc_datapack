@@ -2,5 +2,7 @@
 
 function lito:creaking/player/static
 
-kill @s[scores={core.fear=1900..},gamemode=adventure]
-scoreboard players set @s[scores={core.fear=1900..},gamemode=adventure] core.fear 0
+effect give @s[scores={core.fear=2000..}] levitation 1 1 true
+
+kill @s[scores={core.fear=2300..},gamemode=adventure]
+scoreboard players set @s[scores={core.fear=2300..},gamemode=adventure] core.fear 0

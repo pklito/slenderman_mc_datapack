@@ -10,4 +10,4 @@ execute as @a[scores={core.sees_slender=1}] at @s run function lito:creaking/pla
 
 ##  ==== core.slender_distance ==== ##
 ##  ==== core.seen ==== ##
-execute as @a[tag=player, gamemode=adventure] at @s run function lito:creaking/slender_vision_check/start
+execute as @a[tag=player, gamemode=adventure] at @s run function lito:creaking/slender_vision_check/update_core
