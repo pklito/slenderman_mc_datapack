@@ -2,6 +2,7 @@
 
 # Each command goes on a separate line and they run one after each other
 
+scoreboard objectives add player.tired dummy
 scoreboard objectives add player.stamina dummy
 scoreboard objectives add player.max_stamina dummy
 scoreboard objectives add player.target_hunger dummy
