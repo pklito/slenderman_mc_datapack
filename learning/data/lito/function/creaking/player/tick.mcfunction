@@ -1,5 +1,5 @@
 # Assumes core has been calculated
-execute if score @s core.sees_slender matches 1 if score @n[tag=slenderman_entity] sl_just_teleported matches 1 run function lito:creaking/player/start_flash
+execute if score @s core.sees_slender matches 1 if score @n[tag=slenderman_entity] game.sl_just_teleported matches 1 run function lito:creaking/player/start_flash
 
 execute unless score @s static_flash matches 0.. run function lito:creaking/player/static
 
