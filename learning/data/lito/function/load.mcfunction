@@ -51,6 +51,7 @@ scoreboard objectives add static_flash dummy
 
 scoreboard objectives add page_activated dummy
 
+scoreboard objectives add dev.sprint dummy
 scoreboard objectives add dev.config dummy
 tellraw @a[tag=debug] {"text":"Forceloading chunks...","color":"green"}
 forceload remove all
