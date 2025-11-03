@@ -25,11 +25,11 @@ execute unless score @s player.tired matches 1.. run scoreboard players set @s[s
 execute if score @s player.tired matches 1.. run scoreboard players set @s player.target_hunger 4
 # Input run as @s, score @s player.target_hunger
 execute store result score @s temp run data get entity @s foodLevel
-execute if score @s temp < @s player.target_hunger run effect give @s saturation 1 0
-execute if score @s temp > @s player.target_hunger run effect give @s hunger 1 120
+execute if score @s temp < @s player.target_hunger run effect give @s saturation 1 0 true
+execute if score @s temp > @s player.target_hunger run effect give @s hunger 1 120 true
 
 execute store result score @s temp run data get entity @s foodSaturationLevel
-effect give @s[scores={temp=1..}] hunger 1 15
-effect give @s[scores={temp=6..}] hunger 1 80
-effect give @s[scores={temp=4..}] hunger 1 40
+effect give @s[scores={temp=1..}] hunger 1 15 true
+effect give @s[scores={temp=6..}] hunger 1 80 true
+effect give @s[scores={temp=4..}] hunger 1 40 true
 
