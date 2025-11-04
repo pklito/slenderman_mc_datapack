@@ -1,3 +1,4 @@
+execute if score @s player.dying matches 1.. run return fail
 execute if predicate lito:sprinting run scoreboard players set @s player.sprinting 1
 execute unless predicate lito:walking run scoreboard players set @s player.sprinting 0
 scoreboard players set @s[nbt={foodLevel:6}] player.sprinting 0
