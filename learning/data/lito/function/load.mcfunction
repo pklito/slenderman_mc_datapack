@@ -3,6 +3,7 @@
 # Each command goes on a separate line and they run one after each other
 
 scoreboard objectives add player.dying dummy
+scoreboard objectives add player.deathscreen dummy
 scoreboard objectives add player.override_static dummy
 scoreboard objectives add player.tired dummy
 scoreboard objectives add player.stamina dummy
@@ -41,6 +42,9 @@ scoreboard players set _120 CONST 120
 scoreboard players set _10 CONST 10
 scoreboard players set _12 CONST 12
 
+scoreboard objectives add misc.math dummy
+
+scoreboard objectives add game.sl_busy dummy
 scoreboard objectives add game.sl_just_teleported dummy
 scoreboard objectives add sl_entity_action dummy
 scoreboard objectives add sl_entity_chasing dummy
