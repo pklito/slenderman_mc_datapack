@@ -9,6 +9,7 @@ execute as @a[tag=player, gamemode=adventure] at @s run function lito:creaking/p
 scoreboard players set @a[gamemode=creative] core.fear 0
 execute as @a[tag=player, gamemode=creative] at @s run function lito:creaking/player/tick
 
-execute as @a[tag=player, gamemode=adventure, scores={player.dying=1..}] run function lito:creaking/death/tick
+execute as @a[tag=player, gamemode=adventure, scores={player.dying=1..}] at @s run function lito:creaking/death/tick
+execute as @a[scores={player.hasDied=1..}] run function lito:creaking/death/reset
 
 execute as @n[tag=slenderman_entity] at @s run function lito:creaking/slenderman

@@ -1,6 +1,8 @@
 # This function runs once when the data pack is loaded. This happens when the world/server starts, and every time "/reload" is ran.
 
-# Each command goes on a separate line and they run one after each other
+# Each command goes on a separate line and they run one after each others
+
+scoreboard objectives add player.hasDied deathCount
 
 scoreboard objectives add player.dying dummy
 scoreboard objectives add player.deathscreen dummy
