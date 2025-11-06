@@ -1,6 +1,8 @@
 execute facing entity @p[tag=player,gamemode=adventure] feet run rotate @s ~ 0
 execute unless entity @a[tag=player,gamemode=adventure] run return fail
 
+execute if score #slenderAI dev.config matches 0 run return fail
+
 scoreboard players set @s game.sl_just_teleported 0
 # If next action, unless player is looking at it
 execute unless score @s sl_entity_action matches 1.. if entity @a[tag=player,scores={core.sees_slender=0}] unless function lito:creaking/action/action_wander run scoreboard players set @s game.sl_just_teleported 1
