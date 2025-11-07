@@ -21,8 +21,3 @@ effect clear @a[tag=player,scores={item.night_vision_on=0}] minecraft:blindness
 effect clear @a night_vision
 effect give @a[tag=player,scores={item.flashlight_state=2, player.sprinting=0},nbt={SelectedItem:{components:{"minecraft:custom_data":{flashlight:true}}}}] minecraft:night_vision 20 0 true
 effect give @a[tag=player,scores={item.flashlight_state=2, player.sprinting=1},nbt={SelectedItem:{components:{"minecraft:custom_data":{flashlight:true}}}}] minecraft:night_vision 2 0 true
-
-
-# Particle 
-execute as @a[tag=player] at @s run particle minecraft:entity_effect{color:[0.996078431372549, 0.4, 1., 0.6]} ^ ^1 ^-22 0 0 0 0 1 force @s
-execute as @a[tag=player] at @s run particle minecraft:entity_effect{color:[0.996078431372549, 0.4, 0., 0.6]} ^ ^1 ^30 0 0 0 0 1 normal @s

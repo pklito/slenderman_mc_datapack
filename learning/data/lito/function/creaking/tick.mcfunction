@@ -20,3 +20,7 @@ execute as @a[tag=player, gamemode=adventure, scores={player.dying=1..}] at @s r
 execute as @a[scores={player.hasDied=1..}] run function lito:creaking/death/reset
 
 execute as @n[tag=slenderman_entity] at @s run function lito:creaking/slenderman
+
+# F5 Particle 
+execute as @a[tag=player,gamemode=adventure] at @s run particle minecraft:entity_effect{color:[0.996078431372549, 0.4, 1., 0.6]} ^ ^1 ^-22 0 0 0 0 1 force @s
+execute as @a[tag=player] at @s run particle minecraft:entity_effect{color:[0.996078431372549, 0.4, 0., 0.6]} ^ ^1 ^30 0 0 0 0 1 normal @s
