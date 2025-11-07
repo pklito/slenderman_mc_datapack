@@ -1,5 +1,12 @@
 execute unless entity @n[tag=slenderman_entity] run return fail
 
+scoreboard players set @a core.alive 0
+scoreboard players set @e[type=player] core.alive 1
+tag @a[scores={core.alive=0},tag=player] add dead_player
+tag @a[scores={core.alive=0}] remove player
+tag @a[scores={core.alive=1},tag=dead_player] add player
+tag @a[scores={core.alive=1}] remove dead_player
+
 # Calculate the important scoreboard values for all players
 function lito:creaking/core
 

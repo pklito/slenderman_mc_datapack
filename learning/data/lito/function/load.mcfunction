@@ -28,6 +28,8 @@ scoreboard objectives add core.slender_distance dummy
 scoreboard objectives add core.sees_slender dummy
 scoreboard objectives add core.seen dummy
 scoreboard objectives add core.fear dummy
+scoreboard objectives add core.alive dummy
+
 
 scoreboard objectives add VAR dummy
 
