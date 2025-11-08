@@ -1,0 +1,2 @@
+$summon minecraft:armor_stand ~ 3.7 ~ {Rotation:$(Rotation),Invulnerable:true,NoBasePlate:true,NoGravity:true,ShowArms:true,Pose:{Body:[69f,0f,0f],Head:[60f,11f,76f],LeftArm:[270f,327f,7f],RightArm:[288f,25f,0f]},ArmorItems:[{},{},{},\
+{id:"player_head",components:{profile:{id:$(UUID)}}}],Tags:["corpse"]}

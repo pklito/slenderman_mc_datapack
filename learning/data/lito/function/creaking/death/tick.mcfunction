@@ -7,6 +7,5 @@ execute if score @s player.dying matches 41..80 run function lito:creaking/death
 
 scoreboard players set kill temp 0
 execute if score @s player.dying matches 80.. run scoreboard players set kill temp 1
-scoreboard players set @s[scores={player.dying=80..}] core.fear 0
-scoreboard players reset @s[scores={player.dying=80..}] player.dying
+execute if score @s player.dying matches 80.. run function lito:creaking/death/end_death
 execute if score kill temp matches 1 run kill @s
