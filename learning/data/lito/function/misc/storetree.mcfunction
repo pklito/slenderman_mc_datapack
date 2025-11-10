@@ -11,3 +11,5 @@ data modify storage lito:trees new.tree set from block ~ ~ ~ name
 
 data modify storage lito:trees base append from storage lito:trees new
 data remove storage lito:trees new
+
+function lito:misc/update_trees
