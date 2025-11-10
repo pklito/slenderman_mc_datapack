@@ -1,0 +1,13 @@
+{
+    "values": [
+        "minecraft:air",
+        "minecraft:void_air",
+        "minecraft:cave_air",
+        "structure_void",
+        "black_stained_glass_pane",
+        "light",
+        "redstone_wire",
+        "tall_grass",
+        "short_grass"
+    ]
+  }
