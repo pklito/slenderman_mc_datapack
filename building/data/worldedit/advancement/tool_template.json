@@ -2,6 +2,10 @@
 	"criteria": { "worldedit item": {
 		"trigger": "minecraft:using_item",
 		"conditions": { "item": {"components": {"custom_data":{"we":true}}}}
-	}},
+	},
+		"is template":{
+			"trigger": "minecraft:using_item",
+			"conditions": {"item": {"components": {"item_name": "\"template\""}}}
+		}},
 	"rewards": { "function": "worldedit:item/tool_template" }
 }
