@@ -1,7 +1,7 @@
 {
-	"criteria": { "use_item": {
+	"criteria": { "worldedit item": {
 		"trigger": "minecraft:using_item",
 		"conditions": { "item": {"components": {"custom_data":{"we":true}}}}
 	}},
-	"rewards": { "function": "worldedit:item/tool_click" }
+	"rewards": { "function": "worldedit:item/tool_hold_detect" }
 }
