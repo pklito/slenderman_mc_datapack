@@ -1,0 +1,11 @@
+{
+	"criteria": { "worldedit item": {
+		"trigger": "minecraft:using_item",
+		"conditions": { "item": {"components": {"custom_data":{"we":true}}}}
+	},
+		"is clear_trees":{
+			"trigger": "minecraft:using_item",
+			"conditions": {"item": {"components": {"item_name": "\"clear trees\""}}}
+		}},
+	"rewards": { "function": "worldedit:item/tool_clear_trees" }
+}
