@@ -1,0 +1,1 @@
+function lito:misc/visual_marker
