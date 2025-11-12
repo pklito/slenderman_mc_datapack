@@ -1,0 +1,11 @@
+{
+	"criteria": { "worldedit item": {
+		"trigger": "minecraft:using_item",
+		"conditions": { "item": {"components": {"custom_data":{"we":true}}}}
+	},
+		"is cancel":{
+			"trigger": "minecraft:using_item",
+			"conditions": {"item": {"components": {"item_name": "\"cancel\""}}}
+		}},
+	"rewards": { "function": "worldedit:item/tool_cancel" }
+}
