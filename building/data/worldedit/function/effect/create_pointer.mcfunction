@@ -1,1 +1,2 @@
-summon slime ~ ~ ~ {Tags:["we.pointer_marker","we.new"],NoGravity:true,NoAI:true,active_effects:[{id:"glowing",duration:-1}],DeathLootTable:"minecraft:empty",attributes:[{id:max_health,base:100f}],Health:100.0f}
+summon block_display ~ ~ ~ {Tags:["we.pointer_marker","we.new"],block_state:{Name:"target"},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[0.8f,0.8f,0.8f],translation:[-0.4f,-0.4f,-0.4f]},CustomNameVisible:true,CustomName:'{"selector":"@p"}'}
+# summon slime ~ ~ ~ {Tags:["we.pointer_marker","we.new"],NoGravity:true,NoAI:true,active_effects:[{id:"glowing",duration:-1}],DeathLootTable:"minecraft:empty",attributes:[{id:max_health,base:100f}],Health:100.0f}

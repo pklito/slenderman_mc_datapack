@@ -5,5 +5,5 @@ function worldedit:effect/attempt_pointer
 
 # Select the marker thing
 function worldedit:util/activate_pointers
-tp @e[tag=we.active,tag=we.pointer_marker] ~ ~ ~
+execute align xyz positioned ~0.5 ~0.5 ~0.5 run tp @e[tag=we.active,tag=we.pointer_marker] ~ ~ ~
 
