@@ -1,0 +1,7 @@
+{
+	"criteria": { "worldedit item": {
+		"trigger": "minecraft:using_item",
+		"conditions": { "item": {"items": "bone_meal"}}
+	}},
+	"rewards": { "function": "worldedit:item/bonemeal" }
+}

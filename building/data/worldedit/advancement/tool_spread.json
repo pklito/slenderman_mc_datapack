@@ -3,9 +3,9 @@
 		"trigger": "minecraft:using_item",
 		"conditions": { "item": {"components": {"custom_data":{"we":true}}}}
 	},
-		"is grass_block":{
+		"is template":{
 			"trigger": "minecraft:using_item",
-			"conditions": {"item": {"components": {"item_name": "\"road\""}}}
+			"conditions": {"item": {"components": {"item_name": "\"spread\""}}}
 		}},
-	"rewards": { "function": "worldedit:item/tool_gravel" }
+	"rewards": { "function": "worldedit:item/tool_spread" }
 }

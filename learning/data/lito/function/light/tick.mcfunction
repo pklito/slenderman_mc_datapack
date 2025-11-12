@@ -18,6 +18,6 @@ kill @e[tag=light,tag=!light_used]
 effect give @a[tag=player,scores={item.night_vision_on=1}] minecraft:blindness 3 10 true
 effect clear @a[tag=player,scores={item.night_vision_on=0}] minecraft:blindness
 
-effect clear @a night_vision
+effect clear @a[tag=player] night_vision
 effect give @a[tag=player,scores={item.flashlight_state=2, player.sprinting=0},nbt={SelectedItem:{components:{"minecraft:custom_data":{flashlight:true}}}}] minecraft:night_vision 20 0 true
 effect give @a[tag=player,scores={item.flashlight_state=2, player.sprinting=1},nbt={SelectedItem:{components:{"minecraft:custom_data":{flashlight:true}}}}] minecraft:night_vision 2 0 true
