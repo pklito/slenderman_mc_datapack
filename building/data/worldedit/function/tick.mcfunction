@@ -7,4 +7,5 @@ scoreboard players operation @r[scores={we.id=0}] we.id = COUNT we.id
 
 # Item hold
 execute as @a at @s if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":"\"pointer\""}}}] run function worldedit:effect/pointer_tick
-execute at @e[type=marker,tag=we.pointer_marker] run particle angry_villager
+
+# execute at @e[type=marker,tag=we.pointer_marker] run function worldedit:util/particles with storage worldedit:dev
