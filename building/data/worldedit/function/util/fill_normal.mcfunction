@@ -1,0 +1,1 @@
+$fill ~-$(size) 4 ~-$(size) ~$(size) 4 ~$(size) $(block) replace air
