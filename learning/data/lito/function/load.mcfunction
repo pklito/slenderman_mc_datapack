@@ -11,6 +11,7 @@ scoreboard objectives add player.tired dummy
 scoreboard objectives add player.stamina dummy
 scoreboard objectives add player.max_stamina dummy
 scoreboard objectives add player.target_hunger dummy
+scoreboard objectives add player.flashing_light dummy
 
 scoreboard objectives add temp dummy
 
@@ -18,6 +19,7 @@ scoreboard objectives add raycast dummy
 scoreboard objectives add flashlight_cooldown dummy
 scoreboard objectives add item.flashlight_state dummy
 scoreboard objectives add item.night_vision_on dummy
+scoreboard objectives add item.battery_timer dummy
 
 scoreboard objectives add player.sprinting dummy
 
