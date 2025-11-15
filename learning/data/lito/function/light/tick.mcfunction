@@ -4,11 +4,16 @@ execute at @e[tag=light] run fill ~ ~ ~ ~ ~ ~ air replace light
 kill @e[tag=light]
 tag @e[tag=light] remove light_used
 
-execute as @a[tag=player,gamemode=!spectator,scores={item.flashlight_state=1},nbt={SelectedItem:{components:{"minecraft:custom_data":{flashlight:true}}}}] at @s run function lito:item/flashlight_on_ux
-execute as @a[tag=player,gamemode=!spectator,scores={item.flashlight_state=2},nbt=!{SelectedItem:{components:{"minecraft:custom_data":{flashlight:true}}}}] at @s run function lito:item/flashlight_off_ux_all
+scoreboard players set @a player.holding_flashlight 0
+scoreboard players set @a[tag=player,nbt={SelectedItem:{components:{"minecraft:custom_data":{flashlight:true}}}}] player.holding_flashlight 1
 
-scoreboard players set @a[tag=player,gamemode=!spectator,scores={item.flashlight_state=1},nbt={SelectedItem:{components:{"minecraft:custom_data":{flashlight:true}}}}] item.flashlight_state 2
-scoreboard players set @a[tag=player,gamemode=!spectator,scores={item.flashlight_state=2},nbt=!{SelectedItem:{components:{"minecraft:custom_data":{flashlight:true}}}}] item.flashlight_state 1
+execute as @a[scores={player.holding_flashlight=1}] unless data entity @s SelectedItem.components."minecraft:custom_data".id run function lito:item/flashlight_id
+
+execute as @a[tag=player,gamemode=!spectator,scores={item.flashlight_state=1,player.holding_flashlight=1}] at @s run function lito:item/flashlight_on_ux
+execute as @a[tag=player,gamemode=!spectator,scores={item.flashlight_state=2,player.holding_flashlight=0}] at @s run function lito:item/flashlight_off_ux_all
+
+scoreboard players set @a[tag=player,gamemode=!spectator,scores={item.flashlight_state=1,player.holding_flashlight=1}] item.flashlight_state 2
+scoreboard players set @a[tag=player,gamemode=!spectator,scores={item.flashlight_state=2,player.holding_flashlight=0}] item.flashlight_state 1
 
 execute if score #flashBlocks dev.config matches 1 as @e[tag=fake_player_light] align xyz positioned ~0.5 ~ ~0.5 at @s run function lito:light/player
 
@@ -28,5 +33,5 @@ effect give @a[tag=player,scores={item.night_vision_on=1}] minecraft:blindness 3
 effect clear @a[tag=player,scores={item.night_vision_on=0}] minecraft:blindness
 
 effect clear @a[tag=player] night_vision
-execute if score #flashCircle dev.config matches 1 run effect give @a[tag=player,scores={player.flashing_light=1, player.sprinting=0},nbt={SelectedItem:{components:{"minecraft:custom_data":{flashlight:true}}}}] minecraft:night_vision 20 0 true
-execute if score #flashCircle dev.config matches 1 run effect give @a[tag=player,scores={player.flashing_light=1, player.sprinting=1},nbt={SelectedItem:{components:{"minecraft:custom_data":{flashlight:true}}}}] minecraft:night_vision 2 0 true
+execute if score #flashCircle dev.config matches 1 run effect give @a[tag=player,scores={player.flashing_light=1, player.sprinting=0}] minecraft:night_vision 20 0 true
+execute if score #flashCircle dev.config matches 1 run effect give @a[tag=player,scores={player.flashing_light=1, player.sprinting=1}] minecraft:night_vision 2 0 true

@@ -12,7 +12,9 @@ scoreboard objectives add player.stamina dummy
 scoreboard objectives add player.max_stamina dummy
 scoreboard objectives add player.target_hunger dummy
 scoreboard objectives add player.flashing_light dummy
+scoreboard objectives add player.holding_flashlight dummy
 
+scoreboard objectives add item.flashlight_id dummy
 scoreboard objectives add temp dummy
 
 scoreboard objectives add raycast dummy
