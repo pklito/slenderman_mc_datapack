@@ -61,7 +61,7 @@ scoreboard objectives add sound.static dummy
 scoreboard objectives add static_flash dummy
 
 scoreboard objectives add page_activated dummy
-
+scoreboard objectives add carrot_clicked minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add dev.sprint dummy
 scoreboard objectives add dev.config dummy
 tellraw @a[tag=debug] {"text":"Forceloading chunks...","color":"green"}

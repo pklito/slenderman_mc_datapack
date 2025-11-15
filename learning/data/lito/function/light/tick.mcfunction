@@ -3,6 +3,10 @@ execute as @a[tag=fake_player_light] at @s run fill ~-14 ~-3 ~-14 ~14 ~14 ~14 ai
 execute at @e[tag=light] run fill ~ ~ ~ ~ ~ ~ air replace light
 kill @e[tag=light]
 tag @e[tag=light] remove light_used
+
+execute as @a[tag=player,gamemode=!spectator,scores={item.flashlight_state=1},nbt={SelectedItem:{components:{"minecraft:custom_data":{flashlight:true}}}}] at @s run function lito:item/flashlight_on_ux
+execute as @a[tag=player,gamemode=!spectator,scores={item.flashlight_state=2},nbt=!{SelectedItem:{components:{"minecraft:custom_data":{flashlight:true}}}}] at @s run function lito:item/flashlight_off_ux_all
+
 scoreboard players set @a[tag=player,gamemode=!spectator,scores={item.flashlight_state=1},nbt={SelectedItem:{components:{"minecraft:custom_data":{flashlight:true}}}}] item.flashlight_state 2
 scoreboard players set @a[tag=player,gamemode=!spectator,scores={item.flashlight_state=2},nbt=!{SelectedItem:{components:{"minecraft:custom_data":{flashlight:true}}}}] item.flashlight_state 1
 
