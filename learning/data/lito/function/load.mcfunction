@@ -14,7 +14,6 @@ scoreboard objectives add player.target_hunger dummy
 scoreboard objectives add player.flashing_light dummy
 scoreboard objectives add player.holding_flashlight dummy
 
-scoreboard objectives add item.flashlight_id dummy
 scoreboard objectives add temp dummy
 
 scoreboard objectives add raycast dummy
@@ -23,6 +22,9 @@ scoreboard objectives add item.flashlight_state dummy
 scoreboard objectives add item.night_vision_on dummy
 scoreboard objectives add item.battery_timer dummy
 scoreboard objectives add item.battery dummy
+scoreboard objectives add item.flashlight_id dummy
+scoreboard objectives add item.old_flashlight_id dummy
+scoreboard objectives add item.threw_flashlight dummy
 
 
 scoreboard objectives add player.sprinting dummy
