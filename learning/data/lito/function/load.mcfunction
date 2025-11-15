@@ -20,6 +20,8 @@ scoreboard objectives add flashlight_cooldown dummy
 scoreboard objectives add item.flashlight_state dummy
 scoreboard objectives add item.night_vision_on dummy
 scoreboard objectives add item.battery_timer dummy
+scoreboard objectives add item.battery dummy
+
 
 scoreboard objectives add player.sprinting dummy
 

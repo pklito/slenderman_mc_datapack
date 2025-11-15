@@ -14,8 +14,11 @@ execute as @e[tag=fake_player_light] align xyz positioned ~0.5 ~ ~0.5 at @s run 
 
 # Set if player is using a flashlight
 scoreboard players set @a player.flashing_light 0
-scoreboard players set @a[tag=player,gamemode=!spectator,scores={item.flashlight_state=2},nbt=!{SelectedItem:{components:{"minecraft:custom_data":{battery:0}}}}] player.flashing_light 1
-
+scoreboard players reset @a item.battery
+execute as @a[scores={item.flashlight_state=2}] store result score @s item.battery run data get entity @s SelectedItem.components."minecraft:custom_model_data".floats[0] 10
+scoreboard players set @a[tag=player,gamemode=!spectator,scores={item.flashlight_state=2,item.battery=1..}] player.flashing_light 1
+#,nbt=!{SelectedItem:{components:{"minecraft:custom_model_data":{floats:[0.0f]}}}}
+#/item modify entity @s weapon.mainhand {function:"minecraft:set_custom_model_data",floats:{values:[10.0f],mode:"replace_all"}}
 execute as @a[scores={player.flashing_light=1, player.sprinting=0}] at @s align xyz positioned ~0.5 ~ ~0.5 run function lito:light/player
 execute as @a[scores={player.flashing_light=1, item.night_vision_on = 0, player.sprinting= 1}] at @s align xyz positioned ~0.5 ~ ~0.5 rotated ~5 ~5 run function lito:light/player
 
