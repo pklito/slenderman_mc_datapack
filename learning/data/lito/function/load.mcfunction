@@ -25,6 +25,7 @@ scoreboard objectives add item.battery dummy
 scoreboard objectives add item.flashlight_id dummy
 scoreboard objectives add item.old_flashlight_id dummy
 scoreboard objectives add item.threw_flashlight dummy
+scoreboard objectives add item.picked_up_flashlight dummy
 
 
 scoreboard objectives add player.sprinting dummy

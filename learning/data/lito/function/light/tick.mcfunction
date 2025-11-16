@@ -4,11 +4,17 @@ execute at @e[tag=light] run fill ~ ~ ~ ~ ~ ~ air replace light
 kill @e[tag=light]
 tag @e[tag=light] remove light_used
 
+# Go through all the items, modify item.threw_flashlight
 function lito:item/detect_thrown_flashlights
 
+# Set player.holding_flashing
 scoreboard players set @a player.holding_flashlight 0
+scoreboard players set @a item.picked_up_flashlight 0
 scoreboard players set @a[tag=player,nbt={SelectedItem:{components:{"minecraft:custom_data":{flashlight:true}}}}] player.holding_flashlight 1
+scoreboard players set @a[tag=player,nbt={SelectedItem:{components:{"minecraft:custom_data":{flashlight:true,dropped:true}}}}] item.picked_up_flashlight 1
+execute as @a[scores={item.picked_up_flashlight=1}] run item modify entity @s weapon.mainhand {function:"set_custom_data",tag:{dropped:false}}
 
+# Set player.holding_flashing
 execute as @a run scoreboard players operation @s item.old_flashlight_id = @s item.flashlight_id
 scoreboard players set @a item.flashlight_id 0
 execute as @a[scores={player.holding_flashlight=1}] unless data entity @s SelectedItem.components."minecraft:custom_data".id run function lito:item/flashlight_id
@@ -18,8 +24,7 @@ execute as @a[scores={player.holding_flashlight=1}] store result score @s item.f
 execute as @a[tag=player,gamemode=!spectator,scores={item.old_flashlight_id=1..,item.flashlight_state=2,item.threw_flashlight=0}] at @s unless score @s item.old_flashlight_id = @s item.flashlight_id run function lito:item/flashlight_off_ux_all
 execute as @a[tag=player,gamemode=!spectator,scores={item.old_flashlight_id=1..,item.flashlight_state=2,item.threw_flashlight=0}] at @s unless score @s item.old_flashlight_id = @s item.flashlight_id run scoreboard players set @s item.flashlight_state 1
 
-execute as @a[tag=player,gamemode=!spectator,scores={item.flashlight_state=1,player.holding_flashlight=1}] at @s run function lito:item/flashlight_on_ux
-# execute as @a[tag=player,gamemode=!spectator,scores={item.flashlight_state=2,player.holding_flashlight=0}] at @s run function lito:item/flashlight_off_ux_all
+execute as @a[tag=player,gamemode=!spectator,scores={item.flashlight_state=1,player.holding_flashlight=1,item.picked_up_flashlight=0}] at @s run function lito:item/flashlight_on_ux
 
 scoreboard players set @a[tag=player,gamemode=!spectator,scores={item.flashlight_state=1,player.holding_flashlight=1}] item.flashlight_state 2
 scoreboard players set @a[tag=player,gamemode=!spectator,scores={item.flashlight_state=2,player.holding_flashlight=0}] item.flashlight_state 1
