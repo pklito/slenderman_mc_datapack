@@ -29,7 +29,9 @@ execute as @a[tag=player,gamemode=!spectator,scores={item.flashlight_state=1,pla
 scoreboard players set @a[tag=player,gamemode=!spectator,scores={item.flashlight_state=1,player.holding_flashlight=1}] item.flashlight_state 2
 scoreboard players set @a[tag=player,gamemode=!spectator,scores={item.flashlight_state=2,player.holding_flashlight=0}] item.flashlight_state 1
 
+scoreboard players set IGNORE_BATTERY temp 1
 execute if score #flashBlocks dev.config matches 1 as @e[tag=fake_player_light] align xyz positioned ~0.5 ~ ~0.5 at @s run function lito:light/player
+scoreboard players set IGNORE_BATTERY temp 0
 
 # Set if player is using a flashlight
 scoreboard players set @a player.flashing_light 0
