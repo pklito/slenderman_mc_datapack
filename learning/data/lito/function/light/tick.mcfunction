@@ -22,7 +22,7 @@ execute as @a[scores={player.holding_flashlight=1}] store result score @s item.f
 
 # Changed items
 execute as @a[tag=player,gamemode=!spectator,scores={item.old_flashlight_id=1..,item.flashlight_state=2,item.threw_flashlight=0}] at @s unless score @s item.old_flashlight_id = @s item.flashlight_id run function lito:item/flashlight_off_ux_all
-execute as @a[tag=player,gamemode=!spectator,scores={item.old_flashlight_id=1..,item.flashlight_state=2,item.threw_flashlight=0}] at @s unless score @s item.old_flashlight_id = @s item.flashlight_id run scoreboard players set @s item.flashlight_state 1
+execute as @a[tag=player,gamemode=!spectator,scores={item.old_flashlight_id=1..,item.flashlight_state=2,item.threw_flashlight=0}] at @s unless score @s item.old_flashlight_id = @s item.flashlight_id run scoreboard players set @s item.flashlight_state 0
 
 execute as @a[tag=player,gamemode=!spectator,scores={item.flashlight_state=1,player.holding_flashlight=1,item.picked_up_flashlight=0}] at @s run function lito:item/flashlight_on_ux
 
