@@ -41,6 +41,11 @@ scoreboard players set @a[tag=player,gamemode=!spectator,scores={item.flashlight
 execute if score #flashBlocks dev.config matches 1 as @a[scores={player.flashing_light=1, player.sprinting=0}] at @s align xyz positioned ~0.5 ~ ~0.5 run function lito:light/player
 execute if score #flashBlocks dev.config matches 1 as @a[scores={player.flashing_light=1, item.night_vision_on = 0, player.sprinting= 1}] at @s align xyz positioned ~0.5 ~ ~0.5 rotated ~5 ~5 run function lito:light/player
 
+execute as @a unless score @s item.battery_timer matches -2147483648..2147483647 run scoreboard players set @s item.battery_timer 180
+scoreboard players remove @a[scores={player.flashing_light=1}] item.battery_timer 1
+execute as @a if entity @s[scores={item.battery_timer=..0}] run function lito:item/decrease_battery
+scoreboard players set @a[scores={item.battery_timer=..0}] item.battery_timer 180
+
 
 # # # Effects and post processing # # #
 effect give @a[tag=player,scores={item.night_vision_on=1}] minecraft:blindness 3 10 true

@@ -1,0 +1,1 @@
+$item modify entity @s weapon.mainhand {function:"set_custom_model_data",floats:{mode:"replace_all",values:[$(battery)]}}
