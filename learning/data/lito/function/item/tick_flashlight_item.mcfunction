@@ -17,5 +17,7 @@ scoreboard players set @s[scores={item.battery=..0}] item.battery 0
 execute store result entity @s[scores={item.battery_timer=200..}] Item.components."minecraft:custom_model_data".floats[0] float 0.1 run scoreboard players get @s item.battery
 scoreboard players set @s[scores={item.battery_timer=200..}] item.battery_timer 0
 
+# Prevent flashlights from despawning
+data modify entity @s[tag=old] Age set value 1
 
 tag @s add old

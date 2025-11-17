@@ -12,6 +12,7 @@ scoreboard players set @a player.holding_flashlight 0
 scoreboard players set @a item.picked_up_flashlight 0
 scoreboard players set @a[tag=player,nbt={SelectedItem:{components:{"minecraft:custom_data":{flashlight:true}}}}] player.holding_flashlight 1
 scoreboard players set @a[tag=player,nbt={SelectedItem:{components:{"minecraft:custom_data":{flashlight:true,dropped:true}}}}] item.picked_up_flashlight 1
+execute as @a[scores={item.picked_up_flashlight=1}] store result score @s item.flashlight_state run data get entity @s SelectedItem.components."minecraft:custom_model_data".flags[0] 1
 execute as @a[scores={item.picked_up_flashlight=1}] run item modify entity @s weapon.mainhand {function:"set_custom_data",tag:{dropped:false}}
 
 # Set player.holding_flashing
@@ -20,9 +21,9 @@ scoreboard players set @a item.flashlight_id 0
 execute as @a[scores={player.holding_flashlight=1}] unless data entity @s SelectedItem.components."minecraft:custom_data".id run function lito:item/flashlight_id
 execute as @a[scores={player.holding_flashlight=1}] store result score @s item.flashlight_id run data get entity @s SelectedItem.components."minecraft:custom_data".id
 
-# Changed items
+# Changed items (set state to 1 if you want to let them stay pressed)
 execute as @a[tag=player,gamemode=!spectator,scores={item.old_flashlight_id=1..,item.flashlight_state=2,item.threw_flashlight=0}] at @s unless score @s item.old_flashlight_id = @s item.flashlight_id run function lito:item/flashlight_off_ux_all
-execute as @a[tag=player,gamemode=!spectator,scores={item.old_flashlight_id=1..,item.flashlight_state=2,item.threw_flashlight=0}] at @s unless score @s item.old_flashlight_id = @s item.flashlight_id run scoreboard players set @s item.flashlight_state 0
+execute as @a[tag=player,gamemode=!spectator,scores={item.old_flashlight_id=1..,item.flashlight_state=2,item.threw_flashlight=0}] at @s unless score @s item.old_flashlight_id = @s item.flashlight_id run scoreboard players set @s item.flashlight_state 1
 
 execute as @a[tag=player,gamemode=!spectator,scores={item.flashlight_state=1,player.holding_flashlight=1,item.picked_up_flashlight=0}] at @s run function lito:item/flashlight_on_ux
 
