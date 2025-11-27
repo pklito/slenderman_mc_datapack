@@ -3,6 +3,7 @@
         "#walls",
         "#slabs",
         "#stairs",
-        "#doors"
+        "#doors",
+        "#trapdoors"
     ]
   }

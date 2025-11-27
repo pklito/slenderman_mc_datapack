@@ -54,6 +54,10 @@ scoreboard players set _200 CONST 200
 scoreboard players set _120 CONST 120
 scoreboard players set _10 CONST 10
 scoreboard players set _12 CONST 12
+scoreboard players set _6966 CONST 6966
+scoreboard players set _8888 CONST 8888
+scoreboard players set _24 CONST 24
+
 
 scoreboard objectives add misc.math dummy
 
