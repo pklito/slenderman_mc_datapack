@@ -8,6 +8,8 @@
         "light",
         "redstone_wire",
         "tall_grass",
-        "short_grass"
+        "short_grass",
+        "#signs",
+        "skeleton_skull"
     ]
   }
