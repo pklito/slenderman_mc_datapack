@@ -1,0 +1,1 @@
+give @s carrot_on_a_stick[custom_model_data={flags:[false],floats:[100]},custom_data={flashlight:true},item_model="slender:flashlight",item_name='"Flashlight"',!max_damage]

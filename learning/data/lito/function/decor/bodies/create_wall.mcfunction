@@ -1,0 +1,1 @@
+summon minecraft:armor_stand ~ ~1 ~ {Invulnerable:true,NoBasePlate:true,NoGravity:true,ShowArms:true,Pose:{Body:[4f,0f,0f],Head:[48f,0f,0f],LeftLeg:[357f,41f,354f],RightLeg:[351f,0f,0f],LeftArm:[360f,33f,348f],RightArm:[343f,0f,11f]},ArmorItems:[{},{},{},{id:"player_head",components:{profile:{name:"pauloalbert"}}}],Tags:["dev.corpse"]}
