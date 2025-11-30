@@ -28,8 +28,8 @@ scoreboard objectives remove CONST
 
 scoreboard objectives remove misc.math
 
-scoreboard objectives remove game.sl_busy
-scoreboard objectives remove game.sl_just_teleported
+scoreboard objectives remove ai.busy
+scoreboard objectives remove ai.just_teleported
 scoreboard objectives remove sl_entity_action
 scoreboard objectives remove sl_entity_chasing
 

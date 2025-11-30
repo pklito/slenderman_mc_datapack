@@ -61,8 +61,24 @@ scoreboard players set _24 CONST 24
 
 scoreboard objectives add misc.math dummy
 
-scoreboard objectives add game.sl_busy dummy
-scoreboard objectives add game.sl_just_teleported dummy
+# constants, current walking speeds, teleport timers, ETC
+# constants.l0, constants of level 0 (0 pages collected)
+scoreboard objectives add ai.constants dummy
+scoreboard objectives add ai.constants.l0 dummy
+scoreboard objectives add ai.constants.l1 dummy
+scoreboard objectives add ai.constants.l2 dummy
+scoreboard objectives add ai.constants.l3 dummy
+scoreboard objectives add ai.constants.l4 dummy
+scoreboard objectives add ai.constants.l5 dummy
+scoreboard objectives add ai.constants.l6 dummy
+scoreboard objectives add ai.constants.l7 dummy
+
+scoreboard objectives add game.force_start_timer dummy
+scoreboard objectives add game.pages_collected dummy
+
+scoreboard objectives add ai.busy dummy
+scoreboard objectives add ai.just_teleported dummy
+
 scoreboard objectives add sl_entity_action dummy
 scoreboard objectives add sl_entity_chasing dummy
 #scoreboard objectives add sl_entity_angry dummy

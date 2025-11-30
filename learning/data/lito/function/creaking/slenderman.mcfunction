@@ -1,13 +1,13 @@
 execute facing entity @p[tag=player,gamemode=adventure] feet run rotate @s ~ 0
 execute unless entity @a[tag=player,gamemode=adventure] run return fail
 
-execute unless entity @s[scores={game.sl_busy=1}] as @p[tag=player,gamemode=adventure,distance=..1] at @s run function lito:creaking/death/kill
+execute unless entity @s[scores={ai.busy=1}] as @p[tag=player,gamemode=adventure,distance=..1] at @s run function lito:creaking/death/kill
 
-scoreboard players set @s game.sl_just_teleported 0
+scoreboard players set @s ai.just_teleported 0
 execute if score #slenderAI dev.config matches 0 run return fail
 
 # If next action, unless player is looking at it
-execute unless score @s sl_entity_action matches 1.. if entity @a[tag=player,scores={core.sees_slender=0}] unless function lito:creaking/action/action_wander run scoreboard players set @s game.sl_just_teleported 1
+execute unless score @s sl_entity_action matches 1.. if entity @a[tag=player,scores={core.sees_slender=0}] unless function lito:creaking/action/action_wander run scoreboard players set @s ai.just_teleported 1
 execute if score @s sl_entity_chasing matches 1 if entity @a[tag=player,scores={core.sees_slender=0}] at @s run function lito:creaking/action/action_chase
 
 
