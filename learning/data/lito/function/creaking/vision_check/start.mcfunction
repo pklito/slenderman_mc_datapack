@@ -4,8 +4,8 @@
 execute at @n[tag=vision_target] facing entity @s feet run tp @n[tag=vision_target] ~ ~ ~ ~ 0
 # Make sure slender is in players cone of vision
 scoreboard players set TEMP temp 0
-execute rotated as @n[tag=vision_target] positioned ^0.35 ^0.8 ^ facing entity @n[tag=vision_target] feet positioned ^ ^ ^1 rotated as @s positioned ^ ^ ^-1 rotated as @n[tag=vision_target] positioned ^-0.35 ^-0.8 ^ if entity @s[distance=..0.83] run scoreboard players set TEMP temp 1
-execute rotated as @n[tag=vision_target] positioned ^-0.35 ^0.8 ^ facing entity @n[tag=vision_target] feet positioned ^ ^ ^1 rotated as @s positioned ^ ^ ^-1 rotated as @n[tag=vision_target] positioned ^0.35 ^-0.8 ^ if entity @s[distance=..0.83] run scoreboard players set TEMP temp 1
+execute rotated as @n[tag=vision_target] positioned ^0.35 ^-0.3 ^ facing entity @n[tag=vision_target] feet positioned ^ ^ ^1 rotated as @s positioned ^ ^ ^-1 rotated as @n[tag=vision_target] positioned ^-0.35 ^0.3 ^ if entity @s[distance=..0.83] run scoreboard players set TEMP temp 1
+execute rotated as @n[tag=vision_target] positioned ^-0.35 ^-0.3 ^ facing entity @n[tag=vision_target] feet positioned ^ ^ ^1 rotated as @s positioned ^ ^ ^-1 rotated as @n[tag=vision_target] positioned ^0.35 ^0.3 ^ if entity @s[distance=..0.83] run scoreboard players set TEMP temp 1
 
 execute positioned ~ ~2 ~ facing entity @n[tag=vision_target] feet positioned ^ ^ ^1 rotated as @s positioned ^ ^ ^-1 positioned ~ ~-2 ~ if entity @s[distance=..0.8] run scoreboard players set TEMP temp 1
 execute if score TEMP temp matches 0 run return fail
