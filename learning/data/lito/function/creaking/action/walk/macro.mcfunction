@@ -1,4 +1,4 @@
-execute \
- positioned ^ ^ ^0.07 unless function lito:creaking/vision_check/test_position \
+$execute \
+ positioned ^ ^ ^$(distance) unless function lito:creaking/vision_check/test_position \
  positioned ^ ^ ^0.05 unless function lito:creaking/vision_check/test_position positioned ^ ^ ^-0.05 \
  run tp ~ ~ ~
