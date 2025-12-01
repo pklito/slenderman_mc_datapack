@@ -1,2 +1,2 @@
-execute as @a[tag=player, gamemode=!spectator] at @s run function lito:move/player
-execute as @a[tag=player, gamemode=!spectator] at @s run function lito:move/stamina
+execute as @a[tag=user.playing, gamemode=!spectator] at @s run function lito:move/player
+execute as @a[tag=user.playing, gamemode=!spectator] at @s run function lito:move/stamina

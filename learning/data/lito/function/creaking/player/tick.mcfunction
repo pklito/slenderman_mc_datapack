@@ -12,4 +12,4 @@ scoreboard players remove @s[scores={static_flash=0..}] static_flash 1
 execute if score @s static_flash matches 0 run function lito:creaking/player/_flash_end
 
 
-execute if entity @s[scores={core.fear=2300..,core.sees_slender=1},gamemode=adventure] unless entity @n[tag=slenderman_entity,scores={ai.busy=1}] run function lito:creaking/death/kill
+execute if entity @s[scores={core.fear=2300..,core.sees_slender=1}] unless entity @n[tag=slenderman_entity,scores={ai.busy=1}] run function lito:creaking/death/kill
