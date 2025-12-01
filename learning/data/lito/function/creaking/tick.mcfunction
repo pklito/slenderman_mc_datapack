@@ -38,5 +38,5 @@ execute as @a[scores={player.hasDied=1..}] run function lito:creaking/death/rese
 execute as @n[tag=slenderman_entity] at @s run function lito:creaking/slenderman
 
 # F5 Particle 
-execute as @a[tag=user.playing] at @s run particle minecraft:entity_effect{color:[0.996078431372549, 0.4, 1., 0.6]} ^ ^1 ^-22 0 0 0 0 1 force @s
+execute if score #F5Prevention dev.config matches 1 as @a[tag=user.playing] at @s run particle minecraft:entity_effect{color:[0.996078431372549, 0.4, 1., 0.6]} ^ ^1 ^-22 0 0 0 0 1 force @s
 execute as @a at @s run particle minecraft:entity_effect{color:[0.996078431372549, 0.4, 0., 0.6]} ^ ^1 ^30 0 0 0 0 1 normal @s
