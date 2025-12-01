@@ -18,6 +18,6 @@ execute store result score @s[scores={sound.static=..0, core.fear=100..}] sound.
 # Piano
 execute unless score @s sound.piano matches -2147483648..2147483647 run scoreboard players set @s sound.piano 0
 scoreboard players set @s[scores={core.fear=1..45, sound.piano=0}] sound.piano 20
-playsound slender:slender.piano hostile @s[scores={core.fear=46..70,sound.piano=0}] ~ ~ ~ 1 1
+playsound slender:slender.piano hostile @s[gamemode=!creative,scores={core.fear=46..70,sound.piano=0}] ~ ~ ~ 1 1
 scoreboard players set @s[scores={core.fear=46..70, sound.piano=0}] sound.piano 800
 scoreboard players remove @s[scores={core.fear=0,sound.piano=1..}] sound.piano 1
