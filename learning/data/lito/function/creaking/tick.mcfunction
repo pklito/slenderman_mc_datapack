@@ -28,6 +28,8 @@ execute as @a[tag=user.playing] at @s run function lito:creaking/player/tick
 
 # Just to remove the effects from those not playing
 scoreboard players set @a[tag=!user.playing] core.fear 0
+scoreboard players set @a[gamemode=creative,scores={core.fear=35..}] core.fear 35
+
 execute as @a[tag=user.in_game] at @s run function lito:creaking/player/tick
 
 execute as @a[tag=user.playing, scores={player.dying=1..}] at @s run function lito:creaking/death/tick

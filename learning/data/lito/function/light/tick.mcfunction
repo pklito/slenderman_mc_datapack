@@ -42,7 +42,7 @@ scoreboard players set @a[gamemode=!spectator,scores={item.flashlight_state=2,it
 #,nbt=!{SelectedItem:{components:{"minecraft:custom_model_data":{floats:[0.0f]}}}}
 #/item modify entity @s weapon.mainhand {function:"minecraft:set_custom_model_data",floats:{values:[10.0f],mode:"replace_all"}}
 execute if score #flashBlocks dev.config matches 1 as @a[scores={player.flashing_light=1, player.sprinting=0}] at @s align xyz positioned ~0.5 ~ ~0.5 anchored eyes run function lito:light/player
-execute if score #flashBlocks dev.config matches 1 as @a[scores={player.flashing_light=1, item.night_vision_on = 0, player.sprinting= 1}] at @s align xyz positioned ~0.5 ~ ~0.5 anchored eyes run function lito:light/running_angle
+execute if score #flashBlocks dev.config matches 1 as @a[scores={player.flashing_light=1, player.sprinting= 1}] at @s align xyz positioned ~0.5 ~ ~0.5 anchored eyes run function lito:light/running_angle
 
 execute as @a unless score @s item.battery_timer matches -2147483648..2147483647 run scoreboard players set @s item.battery_timer 180
 scoreboard players remove @a[scores={player.flashing_light=1}] item.battery_timer 1
