@@ -54,7 +54,8 @@ scoreboard players set @a[scores={item.battery_timer=..0}] item.battery_timer 18
 effect give @a[tag=debug,scores={item.night_vision_on=1}] minecraft:blindness 3 10 true
 effect clear @a[tag=debug,scores={item.night_vision_on=0}] minecraft:blindness
 
-effect give @a[tag=user.spectating] minecraft:blindness 3 10 true
+#Spectators get vision
+effect give @a[tag=user.spectating,tag=!debug] minecraft:blindness 3 10 true
 
 effect clear @a[tag=user.playing] night_vision
 execute if score #flashCircle dev.config matches 1 run effect give @a[tag=user.playing,scores={player.flashing_light=1, player.sprinting=0}] minecraft:night_vision 20 0 true
