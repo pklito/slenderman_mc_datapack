@@ -23,6 +23,12 @@ execute if score SUCCESS temp matches 0 run scoreboard players set RAYCAST temp 
 scoreboard players set GO_DOWN temp 1
 execute if score SUCCESS temp matches 0 at @n[tag=vision_target] facing entity @s feet rotated ~ 0 positioned ^-0.4 ^2.2 ^0.1 facing entity @s eyes store success score SUCCESS temp run function lito:creaking/vision_check/loop
 
+#left side (if right side failed)
+execute if score SUCCESS temp matches 0 run scoreboard players set RAYCAST temp 0
+scoreboard players set GO_DOWN temp 1
+execute if score SUCCESS temp matches 0 at @n[tag=vision_target] facing entity @s feet rotated ~ 0 positioned ^ ^2.2 ^0.1 facing entity @s eyes store success score SUCCESS temp run function lito:creaking/vision_check/loop
+
+
 execute if score SUCCESS temp matches 0 run return fail
 
 scoreboard players operation RAYCAST core.slender_distance = RAYCAST temp

@@ -1,4 +1,4 @@
-execute unless function lito:creaking/action/core/pred_legal run return run function lito:creaking/action/core/success_jump
+execute if function lito:creaking/action/core/pred_legal run return run function lito:creaking/action/core/success_jump
 
 scoreboard players remove ITER temp 1
 execute if score ITER temp matches ..0 run return fail
