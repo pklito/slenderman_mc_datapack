@@ -41,12 +41,15 @@ scoreboard objectives add core.alive dummy
 
 
 scoreboard objectives add VAR dummy
+scoreboard objectives add VAR2 dummy
+
 
 scoreboard objectives add CONST dummy
 scoreboard players set _6 CONST 6
 
 scoreboard players set _80 CONST 80
 scoreboard players set _4 CONST 4
+scoreboard players set _2 CONST 2
 scoreboard players set _100 CONST 100
 scoreboard players set _1000 CONST 1000
 
